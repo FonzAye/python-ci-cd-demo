@@ -6,11 +6,11 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repository') {
-            steps {
-                git url: 'https://github.com/FonzAye/python-ci-cd-demo.git'
-            }
-        }
+        // stage('Clone Repository') {
+        //     steps {
+        //         git url: 'https://github.com/FonzAye/python-ci-cd-demo.git'
+        //     }
+        // }
 
         stage('Build Docker Image') {
             steps {
