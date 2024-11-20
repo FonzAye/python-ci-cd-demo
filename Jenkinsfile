@@ -8,16 +8,9 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git url: 'https://github.com/FonzAye/python-ci-cd-demo.git'
+                git url: 'https://github.com/your-username/python-ci-cd-demo.git'
             }
         }
-
-        stage('Validate') {
-            steps {
-                script {
-                    sh 'ls -la'
-                }
-            }
 
         stage('Build Docker Image') {
             steps {
@@ -43,5 +36,4 @@ pipeline {
             }
         }
     }
-}
 }
